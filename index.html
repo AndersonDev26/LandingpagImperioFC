@@ -8,7 +8,6 @@
     <meta name="description"
         content="Loja online de camisas de time de futebol. Qualidade premium, envio para todo o Brasil e atendimento direto no WhatsApp.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap"
@@ -19,15 +18,19 @@
 <body>
     <header id="top">
         <div class="wrap nav">
-            <a href="#inicio" class="brand" aria-label="Império FC"><img src="/assets/logo.png"
+            <a href="#inicio" class="brand" aria-label="Império FC"><img src="logo.png"
                     alt="Logo Império FC"><span>Império FC</span></a>
-            <button class="burger" id="burger" aria-label="Abrir menu"
-                aria-expanded="false"><span></span><span></span><span></span></button>
+
             <nav class="menu" id="menu">
                 <a href="#camisas">Camisas</a><a href="#vantagens">Vantagens</a><a href="#como">Como comprar</a><a
                     href="#avaliacoes">Avaliações</a><a href="#faq">Dúvidas</a>
-                <a href="#" class="btn btn-wa wa">Fale conosco</a>
             </nav>
+            <div class="actions"><button class="cartbtn" id="openCart" aria-label="Abrir carrinho"><svg
+                        viewBox="0 0 24 24">
+                        <path d="M5 8h14l-1 12H6z" />
+                        <path d="M9 8V6a3 3 0 016 0v2" />
+                    </svg><b id="cnt" hidden>0</b></button><button class="burger" id="burger" aria-label="Abrir menu"
+                    aria-expanded="false"><span></span><span></span><span></span></button></div>
         </div>
     </header>
 
@@ -38,18 +41,16 @@
                     <span class="tag">Frete grátis acima de R$ 299</span>
                     <h1>Vista a camisa <span class="gold">do seu time</span></h1>
                     <p>Camisas de futebol com acabamento premium, tecido que respira e envio para todo o Brasil. Peça
-                        pelo site ou direto no WhatsApp.</p>
-                    <div class="cta"><a href="#camisas" class="btn btn-gold">Ver camisas</a><a href="#"
-                            class="btn btn-wa wa"><svg width="22" height="22" viewBox="0 0 32 32" fill="currentColor">
-                                <use href="#wa" />
-                            </svg>Chamar no WhatsApp</a></div>
+                        pelo site e receba em casa.</p>
+                    <div class="cta"><a href="#camisas" class="btn btn-gold">Ver camisas</a><a href="#como"
+                            class="btn btn-line">Como comprar</a></div>
                     <div class="stats">
                         <div><b data-n="12000">0</b><span>camisas entregues</span></div>
                         <div><b data-n="4.9" data-d="1">0</b><span>nota dos clientes</span></div>
                         <div><b data-n="7">0</b><span>dias para trocar</span></div>
                     </div>
                 </div>
-                <div class="hero-logo"><img src="/assets/logo.png" alt="Escudo Império FC com coroa dourada"></div>
+                <div class="hero-logo"><img src="logo.png" alt="Escudo Império FC com coroa dourada"></div>
             </div>
         </section>
 
@@ -66,8 +67,7 @@
                 <div class="top">
                     <div>
                         <h2>Escolha sua <span class="gold">camisa</span></h2>
-                        <p class="sub">Modelos mais pedidos da semana. Toque em comprar e finalize o pedido com a gente
-                            no WhatsApp.</p>
+                        <p class="sub">Modelos mais pedidos da semana. Escolha o tamanho e adicione ao carrinho.</p>
                     </div>
                     <div class="tabs" role="tablist" id="tabs"></div>
                 </div>
@@ -123,11 +123,11 @@
                 <div class="steps">
                     <div class="step">
                         <h3>Escolha o modelo</h3>
-                        <p>Veja as camisas, selecione o tamanho e toque em comprar.</p>
+                        <p>Veja as camisas, selecione o tamanho e adicione ao carrinho.</p>
                     </div>
                     <div class="step">
-                        <h3>Confirme no WhatsApp</h3>
-                        <p>Você cai na conversa com o pedido pronto. Informamos frete e formas de pagamento.</p>
+                        <h3>Finalize no carrinho</h3>
+                        <p>Informe o endereço e escolha Pix ou cartão em até 6x sem juros.</p>
                     </div>
                     <div class="step">
                         <h3>Receba em casa</h3>
@@ -194,8 +194,8 @@
         <section class="final">
             <div class="wrap">
                 <h2>Sua próxima camisa <span class="gold">está aqui</span></h2>
-                <p class="sub">Fale agora com nosso time e receba atendimento na hora.</p>
-                <a href="#" class="btn btn-wa wa">Chamar no WhatsApp</a>
+                <p class="sub">Escolha seu modelo, monte o carrinho e finalize em poucos cliques.</p>
+                <a href="#camisas" class="btn btn-gold">Ver camisas</a>
             </div>
         </section>
     </main>
@@ -203,7 +203,7 @@
     <footer>
         <div class="wrap">
             <div class="fgrid">
-                <div style="max-width:300px"><a href="#inicio" class="brand"><img src="/assets/logo.png"
+                <div style="max-width:300px"><a href="#inicio" class="brand"><img src="logo.png"
                             alt="Império FC"><span>Império FC</span></a>
                     <p style="margin-top:14px">Camisas de futebol com qualidade de campeão, direto na sua casa.</p>
                 </div>
@@ -218,7 +218,7 @@
                 <div>
                     <h4>Atendimento</h4>
                     <ul>
-                        <li><a href="#" class="wa">WhatsApp</a></li>
+                        <li>Dúvidas? Use o botão do WhatsApp</li>
                         <li><a href="#">@imperiofc</a></li>
                         <li>Seg a sáb, 9h às 19h</li>
                     </ul>
@@ -227,6 +227,23 @@
             <p class="copy">© <span id="yr"></span> Império FC. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <div class="ov" id="ov"></div>
+    <aside class="drawer" id="drawer" aria-label="Carrinho" aria-hidden="true">
+        <div class="dh">
+            <h3>Seu carrinho</h3><button class="x" id="closeCart" aria-label="Fechar carrinho">×</button>
+        </div>
+        <div class="ship" id="ship"></div>
+        <div class="items" id="items"></div>
+        <div class="df">
+            <div class="row"><span>Subtotal</span><b id="sub"></b></div>
+            <div class="row pix"><span>No Pix (5% off)</span><b id="pix"></b></div><button class="btn btn-gold"
+                id="checkout">Finalizar compra</button>
+        </div>
+    </aside>
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+        <div class="mbox" id="mbox"></div>
+    </div>
 
     <a href="#" class="fab wa" aria-label="Falar no WhatsApp" id="fab"><em>Posso ajudar? Fale conosco</em><i><svg
                 viewBox="0 0 32 32">
